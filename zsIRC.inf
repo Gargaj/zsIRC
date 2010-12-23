@@ -1,0 +1,45 @@
+[Version]
+Signature = "$Windows NT$"
+Provider = "zsIRC"
+CESignature = "$Windows CE$"
+
+[CEStrings]
+AppName  = "zsIRC"            
+InstallDir = "%CE1%\%AppName%"
+
+[CEDevice]
+"ProcessorType" = 2577
+"UnsupportedPlatforms" = "HPC","Jupiter","Palm PC2"
+"VersionMin" = 4.2
+"BuildMin" = 0.0
+"VersionMax" = 1000.0
+"BuildMax" = 0xE0000000
+
+[SourceDisksNames]
+1 = ,"Files from current directory",,"."
+
+[SourceDisksFiles]
+readme.txt = 1
+zsIRC.exe = 1
+zsIRC.ini = 1
+zsIRC_events.ini = 1
+file_id.diz = 1
+
+[DefaultInstall]
+"CopyFiles"   = "Files.InstallDir"
+"CEShortcuts" = "Links"
+
+[DestinationDirs]
+"DefaultDestDir" = ,%InstallDir%
+"Files.InstallDir" = ,%InstallDir%
+"Links" = ,%CE11%
+
+[Files.InstallDir]
+readme.txt      ,,,0x40000000
+zsIRC.exe       ,,,0x40000000
+zsIRC.ini       ,,,0x40000010
+zsIRC_events.ini,,,0x40000010
+file_id.diz     ,,,0x40000000
+
+[Links]
+"zsIRC",0,%AppName%.exe

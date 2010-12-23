@@ -1,0 +1,592 @@
+//Microsoft eMbedded Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hungarian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+#ifdef _WIN32
+LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\zsIRC.rc2""  // non-Microsoft eMbedded Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""wceres.rc""         // WCE-specific components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32776
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menubar
+//
+
+IDR_EDIT MENU DISCARDABLE 
+BEGIN
+    POPUP "root"
+    BEGIN
+        MENUITEM "&Cut",                        ID_EDIT_CUT
+        MENUITEM "C&opy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+    END
+END
+
+IDR_CBAR MENU DISCARDABLE 
+BEGIN
+    POPUP "root"
+    BEGIN
+        MENUITEM "&Close",                      IDR_CBAR_CLOSE
+    END
+END
+
+IDR_USER MENU DISCARDABLE 
+BEGIN
+    POPUP "&root"
+    BEGIN
+        MENUITEM "&Query",                      IDR_USER_QUERY
+        MENUITEM "&Whois",                      IDR_USER_WHOIS
+        MENUITEM "&Whois (extended)",           IDR_USER_WHOISEX
+    END
+END
+
+IDR_OPTIONS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Options menu"
+    BEGIN
+        MENUITEM "&OK",                         ID_OPTIONS_OK
+        MENUITEM "&Apply",                      ID_OPTIONS_APPLY
+        MENUITEM "&Cancel",                     ID_OPTIONS_CANCEL
+    END
+END
+
+IDR_SOFTKEYTEST MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "puu",                         ID_1_PUU
+    END
+    POPUP "2"
+    BEGIN
+        MENUITEM "test",                        ID_2_TEST
+    END
+    POPUP "3"
+    BEGIN
+        MENUITEM "teeeest",                     ID_3_TEEEEST
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+IDR_EDIT SHMENUBAR DISCARDABLE 
+BEGIN
+    IDR_EDIT, 1,
+    I_IMAGENONE, ID_EDIT_ROOT, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_CAP_ROOT, 0, 0,
+END
+
+IDR_CBAR SHMENUBAR DISCARDABLE 
+BEGIN
+    IDR_CBAR, 1,
+    I_IMAGENONE, IDR_CBAR_ROOT, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_CAP_ROOT, 0, 0,
+END
+
+IDR_USER SHMENUBAR DISCARDABLE 
+BEGIN
+    IDR_USER, 1,
+    I_IMAGENONE, IDR_USER_ROOT, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_CAP_ROOT, 0, 0,
+END
+
+IDR_OPTIONS SHMENUBAR DISCARDABLE 
+BEGIN
+    IDR_OPTIONS, 1,
+    I_IMAGENONE, ID_OPTIONS_MENU, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_CAP_OK, 0, 0,
+END
+
+IDR_SOFTKEYTEST SHMENUBAR DISCARDABLE 
+BEGIN
+    IDR_SOFTKEYTEST, 3,
+    I_IMAGENONE, ID_1, TBSTATE_ENABLED, TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, 
+    IDS_CAP_1, 0, 0,
+    I_IMAGENONE, ID_2, TBSTATE_ENABLED, TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, 
+    IDS_CAP_2, 0, 1,
+    I_IMAGENONE, ID_3, TBSTATE_ENABLED, TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, 
+    IDS_CAP_3, 0, 2,
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NOTIFYICON          ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 132, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Options"
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,5,5,40,10
+    PUSHBUTTON      "Cancel",IDCANCEL,45,5,40,10
+    PUSHBUTTON      "Save/apply",IDC_APPLY,85,5,40,10
+END
+
+IDD_OPTIONS_CONNECTION DIALOG DISCARDABLE  0, 0, 134, 126
+STYLE WS_CHILD | WS_CAPTION | WS_VSCROLL
+CAPTION "Connection"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_SERVER_NAME,50,5,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SERVER_PORT,50,20,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SERVER_PASS,50,75,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IDENT,50,90,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REALNAME,50,105,60,12,ES_AUTOHSCROLL
+    LTEXT           "Server:",IDC_STATIC,5,6,40,10
+    LTEXT           "Server port:",IDC_STATIC,5,22,40,10
+    LTEXT           "Password:",IDC_STATIC,5,76,40,10
+    LTEXT           "Ident:",IDC_STATIC,5,91,40,10
+    LTEXT           "Real name:",IDC_STATIC,5,106,40,10
+    CONTROL         "Secure (SSL) connection",IDC_SERVER_SECURE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,35,109,9
+    CTEXT           "If certificate is unknown:",IDC_STATIC,5,45,105,10
+    COMBOBOX        IDC_SSL_INVALID,5,55,110,120,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPTIONS_APPEARANCE DIALOG DISCARDABLE  0, 0, 130, 167
+STYLE WS_CHILD | WS_CAPTION | WS_VSCROLL
+CAPTION "Appearance"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Enable timestamps",IDC_TIMESTAMPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,5,93,12
+    EDITTEXT        IDC_CHANNELBARHEIGHT,75,20,30,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Channel bar height:",IDC_STATIC,5,22,65,10
+    EDITTEXT        IDC_NICKLISTWIDTH,75,35,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Nicklist width:",IDC_STATIC,5,37,60,10
+    CONTROL         "Sort buttons",IDC_SORTCHANNELS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,50,93,12
+    CONTROL         "Offscreen buffering (removes flickering, but looks ugly on VGA!)",
+                    IDC_OFFSCREENBUFFERING,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,5,65,105,25
+END
+
+IDD_OPTIONS_BEHAVIOUR DIALOG DISCARDABLE  0, 0, 126, 130
+STYLE WS_CHILD | WS_CAPTION | WS_VSCROLL
+CAPTION "Behaviour"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_QUITMESSAGE,55,5,55,12,ES_AUTOHSCROLL
+    LTEXT           "Quitmessage:",IDC_STATIC,5,6,45,10
+    CONTROL         "Connect automatically",IDC_AUTOCONNECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,93,10
+    CONTROL         "Rejoin on reconnect",IDC_REJOINONCONNECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,30,93,10
+    CONTROL         "Pass unknown commands directly to server",
+                    IDC_PASSCOMMANDSRAW,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,5,40,105,20
+    CONTROL         "Strip color codes",IDC_STRIPCOLORCODES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,60,93,10
+    LTEXT           "Codepage:",IDC_STATIC,5,97,45,10
+    COMBOBOX        IDC_CODEPAGE,53,95,55,120,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Check for new updates on connect",IDC_CHECKFORUPDATES,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | 
+                    WS_TABSTOP,5,70,93,20
+END
+
+IDD_OPTIONS_LOGGING DIALOG DISCARDABLE  0, 0, 116, 71
+STYLE WS_CHILD | WS_CAPTION | WS_VSCROLL
+CAPTION "Logging"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Logging",IDC_LOGGING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,5,93,12
+    CONTROL         "Timestamp logs",IDC_DOLOGTIMESTAMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,52,93,12
+    EDITTEXT        IDC_LOGDIRECTORY,5,30,95,12,ES_AUTOHSCROLL
+    LTEXT           "Directory for logs:",IDC_STATIC,5,22,100,10
+END
+
+IDD_OPTIONS_FONTS DIALOG DISCARDABLE  0, 0, 131, 95
+STYLE WS_CHILD | WS_CAPTION | WS_VSCROLL
+CAPTION "Fonts"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_CONVERSATIONFONT,5,15,80,12,ES_AUTOHSCROLL
+    LTEXT           "Conversation font face and size:",IDC_STATIC,5,5,105,10
+    EDITTEXT        IDC_CONVERSATIONFONTSIZE,90,15,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUTTONFONT,5,40,80,12,ES_AUTOHSCROLL
+    LTEXT           "Channel bar font face and size:",IDC_STATIC,5,30,105,10
+    EDITTEXT        IDC_BUTTONFONTSIZE,90,40,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICKLISTFONT,5,65,80,12,ES_AUTOHSCROLL
+    LTEXT           "Nicklist font face and size:",IDC_STATIC,5,55,100,10
+    EDITTEXT        IDC_NICKLISTFONTSIZE,90,65,20,12,ES_AUTOHSCROLL
+END
+
+IDD_OPTIONS_COLORS DIALOG DISCARDABLE  0, 0, 131, 122
+STYLE WS_CHILD | WS_CAPTION | WS_VSCROLL
+CAPTION "Colors"
+FONT 8, "System"
+BEGIN
+    LTEXT           "Background color:",IDC_STATIC,5,8,75,10
+    PUSHBUTTON      "Custom1",IDC_FOREGROUNDCOLOR,85,20,30,15
+    LTEXT           "Foreground color:",IDC_STATIC,5,23,75,10
+    PUSHBUTTON      "Custom1",IDC_BACKGROUNDCOLOR,85,5,30,15
+    PUSHBUTTON      "Custom1",IDC_ACTIONCOLOR,85,40,30,15
+    LTEXT           "Action color:",IDC_STATIC,5,42,75,10
+    PUSHBUTTON      "Custom1",IDC_JOINCOLOR,85,55,30,15
+    LTEXT           "Join color:",IDC_STATIC,5,56,75,10
+    PUSHBUTTON      "Custom1",IDC_MODECOLOR,85,70,30,15
+    PUSHBUTTON      "Custom1",IDC_PARTCOLOR,85,85,30,15
+    PUSHBUTTON      "Custom1",IDC_NOTICECOLOR,85,100,30,15
+    LTEXT           "Mode color:",IDC_STATIC,5,72,75,10
+    LTEXT           "Part color:",IDC_STATIC,5,88,75,10
+    LTEXT           "Notice color:",IDC_STATIC,5,105,75,10
+END
+
+IDD_OPTIONS_NICKS DIALOG DISCARDABLE  0, 0, 131, 156
+STYLE WS_CHILD | WS_CAPTION | WS_VSCROLL
+CAPTION "Nicks"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_NICK0,5,15,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK1,5,30,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK2,5,45,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK3,5,60,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK4,5,75,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK5,5,90,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK6,5,105,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK7,5,120,110,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK8,5,134,110,15,ES_AUTOHSCROLL
+    LTEXT           "Possible nicks: (top-down priority)",IDC_STATIC,5,5,110,
+                    10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_OPTIONS_CONNECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_OPTIONS_APPEARANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_OPTIONS_BEHAVIOUR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_OPTIONS_LOGGING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 98
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_OPTIONS_FONTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_OPTIONS_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_OPTIONS_NICKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_ROOT            "&root"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "zsIRC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_OK              "&Options menu"
+    IDS_CAP_CANCEL          "&Cancel"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_1               "1"
+    IDS_CAP_2               "2"
+    IDS_CAP_3               "3"
+END
+
+#endif    // Hungarian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menubar
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Menu"
+    BEGIN
+        MENUITEM "&About",                      ID_MENU_ABOUT
+        MENUITEM "&Options",                    ID_MENU_OPTIONS
+        MENUITEM "&Check for Updates",          ID_MENU_CHECK
+        MENUITEM "&Visit homepage",             ID_MENU_VISIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Connect",                    ID_MENU_CONNECT
+        MENUITEM "&New server window",          ID_MENU_NEWSERVER
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_EXIT
+    END
+    MENUITEM "&Next chan",                  ID_MENU_NEXTCHAN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+IDR_MAINFRAME SHMENUBAR MOVEABLE PURE 
+BEGIN
+    IDR_MAINFRAME, 2,
+    I_IMAGENONE, ID_MENU1, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_CAP_MENU, 0, 0,
+    I_IMAGENONE, ID_MENU_NEXTCHAN, TBSTATE_ENABLED, TBSTYLE_AUTOSIZE, 
+    IDS_CAP_NEXTCHAN, 0, NOMENU,
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\zsIRC.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 140, 111
+STYLE WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+CAPTION "About zsIRC"
+FONT 8, "System"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "zsIRC",IDC_STATIC,40,10,65,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2006-2007",IDC_STATIC,40,20,93,8
+    LTEXT           "by Gergely Szelei (Gargaj / Conspiracy)",IDC_STATIC,40,
+                    30,75,20
+    EDITTEXT        IDC_BUILD,10,55,120,10,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_MENU            "&Menu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_MENUITEM32800   "^"
+    IDS_CAP_NEXTCHAN        "&Next chan"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\zsIRC.rc2"  // non-Microsoft eMbedded Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "wceres.rc"         // WCE-specific components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
